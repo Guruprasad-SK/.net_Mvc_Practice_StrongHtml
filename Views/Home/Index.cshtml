@@ -1,0 +1,35 @@
+﻿@using StrongInlinehHTML.Models
+@model Employee
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("myForm"))
+        {
+            @Html.TextBoxFor(x => x.Name)
+
+            <br />
+            <br />
+            @Html.TextBoxFor(x => x.Address)
+
+            <br />
+            <br />
+            @Html.CheckBoxFor(x => x.isEmpty)
+
+            <br />
+            <br />
+
+            <input type="submit" value="Press Me" />
+
+
+        }
+
+    </div>
+</body>
+</html>
